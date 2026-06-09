@@ -1,0 +1,8 @@
+﻿input_predictions_csv: results/local_smoke/predictions_long.csv
+output_dir: results/witness_sweep/k_32
+benchmark_repeats: 50
+witness:
+  strategy: score_stratified
+  max_per_cell: 32
+
+

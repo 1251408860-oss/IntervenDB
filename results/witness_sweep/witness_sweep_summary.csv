@@ -1,0 +1,8 @@
+﻿input_predictions_csv,output_dir,duckdb_path,full_rows,witness_rows,compression_ratio,witness_strategy,max_abs_f1_error,mean_abs_f1_error,benchmark_repeats,max_per_cell
+<project-root>\results\local_smoke\predictions_long.csv,<project-root>\results\witness_sweep\k_8,<project-root>\results\witness_sweep\k_8\intervendb_local.duckdb,140525,1750,80.3,score_stratified,0.01919762715220341,0.006305551950094047,50,8
+<project-root>\results\local_smoke\predictions_long.csv,<project-root>\results\witness_sweep\k_16,<project-root>\results\witness_sweep\k_16\intervendb_local.duckdb,140525,3430,40.96938775510204,score_stratified,0.018136469401213717,0.0046422732244457855,50,16
+<project-root>\results\local_smoke\predictions_long.csv,<project-root>\results\witness_sweep\k_24,<project-root>\results\witness_sweep\k_24\intervendb_local.duckdb,140525,5110,27.5,score_stratified,0.008000071580111068,0.0033082988291958547,50,24
+<project-root>\results\local_smoke\predictions_long.csv,<project-root>\results\witness_sweep\k_32,<project-root>\results\witness_sweep\k_32\intervendb_local.duckdb,140525,6790,20.695876288659793,score_stratified,0.00501792114695343,0.002332109782126571,50,32
+<project-root>\results\local_smoke\predictions_long.csv,<project-root>\results\witness_sweep\k_48,<project-root>\results\witness_sweep\k_48\intervendb_local.duckdb,140525,10150,13.844827586206897,score_stratified,0.004824552603006627,0.0022650794119609846,50,48
+
+

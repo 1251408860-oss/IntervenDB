@@ -1,0 +1,47 @@
+﻿{
+  "rows": 95871,
+  "features_audited": 27,
+  "top_label_shortcuts": [
+    {
+      "feature": "dest_port_zeek",
+      "nmi_label": 0.8398405442615609,
+      "cramers_v_label": 0.9848815860185959
+    },
+    {
+      "feature": "proto",
+      "nmi_label": 0.8143340883734285,
+      "cramers_v_label": 0.9333691202196553
+    },
+    {
+      "feature": "service",
+      "nmi_label": 0.7569377626065451,
+      "cramers_v_label": 0.95930585689217
+    },
+    {
+      "feature": "is_common_dest_port",
+      "nmi_label": 0.7561221717884178,
+      "cramers_v_label": 0.9143618765147105
+    },
+    {
+      "feature": "history",
+      "nmi_label": 0.646408357011637,
+      "cramers_v_label": 0.9692699011597485
+    },
+    {
+      "feature": "resp_pkts",
+      "nmi_label": 0.5157608439126101,
+      "cramers_v_label": 0.9443812596132474
+    },
+    {
+      "feature": "orig_resp_byte_ratio",
+      "nmi_label": 0.4734598253560389,
+      "cramers_v_label": 0.9011243522067793
+    },
+    {
+      "feature": "total_pkts",
+      "nmi_label": 0.47068420645721876,
+      "cramers_v_label": 0.9551932791573303
+    }
+  ]
+}
+

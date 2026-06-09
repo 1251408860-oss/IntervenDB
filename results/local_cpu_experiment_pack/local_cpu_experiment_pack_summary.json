@@ -1,0 +1,17 @@
+{
+  "output_dir": "H:\\IntervenDB_EDBT_2027_artifact\\results\\local_cpu_experiment_pack",
+  "tables": [
+    "paper_main_robustness_results.csv",
+    "paired_statistical_tests.csv",
+    "intervendb_selector_ablation_summary.csv",
+    "uwf_calibrated_baseline_leaderboard.csv",
+    "uwf_full_shortcut_audit_top.csv"
+  ],
+  "figures": [
+    "main_worst_f1_comparison.png",
+    "hidden_drop_comparison.png",
+    "intervendb_ablation_worst_f1.png",
+    "uwf_calibration_policy_best.png",
+    "uwf_shortcut_top_features.png"
+  ]
+}

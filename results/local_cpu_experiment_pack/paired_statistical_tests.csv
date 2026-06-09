@@ -1,0 +1,5 @@
+dataset,comparison,metric,mean,ci95_low,ci95_high,n,positive_count,negative_count,zero_count,paired_t_p_greater,wilcoxon_p_greater,sign_p_greater
+UWF-2024,intervendb_adaptive_openworld_selector vs cat_full,worst_f1_gain,0.09867732010780181,0.0006070652535387122,0.2908302839737097,10,6,3,2,0.16469262768774798,0.0390625,0.14453125
+UWF-2024,intervendb_adaptive_openworld_selector vs cat_full,hidden_drop_reduction,0.0109457522172963,0.001564818806667607,0.02812859250332428,10,9,0,1,0.11103493111823103,0.001953125,0.001953125
+Gotham-2025,intervendb_counterfactual_ensemble vs cat_full__val_robust_minimax,worst_f1_gain,0.04266414886234138,0.00851449981197816,0.07195691423362316,3,3,0,0,0.07360128335191868,0.125,0.125
+Gotham-2025,intervendb_counterfactual_ensemble vs cat_full__val_robust_minimax,hidden_drop_reduction,0.051396437414346095,0.007839665767456708,0.07890021968081982,3,3,0,0,0.07241098347367758,0.125,0.125

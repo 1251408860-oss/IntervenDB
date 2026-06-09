@@ -1,0 +1,28 @@
+﻿{
+  "config": "configs/intervendb_model_gotham_full_uncapped_autodl.yaml",
+  "output_dir": "<autodl-project-root>/results/intervendb_model_gotham_full_uncapped_autodl",
+  "dataset_type": "gotham",
+  "rows": 5512259,
+  "num_folds": 3,
+  "methods": [
+    "intervendb_adaptive_openworld_selector",
+    "intervendb_conformal_tail_guard",
+    "intervendb_counterfactual_ensemble",
+    "intervendb_coverage_lift_openworld_selector",
+    "intervendb_coverage_openworld_selector",
+    "intervendb_env_calibrated_ensemble",
+    "intervendb_gated_conformal_tail_guard",
+    "intervendb_minimax_selector",
+    "intervendb_observed_selector",
+    "intervendb_openworld_selector",
+    "intervendb_pareto_selector",
+    "intervendb_shift_guard_selector",
+    "intervendb_stability_selector",
+    "intervendb_tail_guard_ensemble"
+  ],
+  "max_hidden_drop": 0.1504349179287532,
+  "max_rrs": 1.1621621621621623,
+  "best_mean_worst_intervention_f1": 0.987654002257571,
+  "elapsed_seconds": 11731.63420984894
+}
+

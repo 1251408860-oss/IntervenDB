@@ -1,0 +1,6 @@
+﻿split,fold,fit_rows,validation_rows,test_rows,fit_positive_rate,validation_positive_rate,test_positive_rate,validation_strategy,validation_group_col,validation_groups,validation_removed_group_rows,observed_selector_candidate,minimax_selector_candidate,stability_selector_candidate,shift_guard_selector_candidate,pareto_selector_candidate
+random,all,3389314,12000,1929291,0.810027633910579,0.4999166666666667,0.818586206020761,device_challenge,device_file,iotsim-city-power-1.csv,187654,protocol_core_rf,protocol_core_rf,protocol_core_rf,protocol_core_rf,protocol_core_rf
+time,all,2687225,895742,1929292,0.8185860878787596,0.8185861553884936,0.8185863000520398,random,,,0,rf_full,rf_full,protocol_core_rf,rf_full,protocol_core_rf
+device,all,2915869,971957,1624433,0.8528376960693365,0.8528381399588665,0.7366102510845323,random,,,0,rf_full,rf_full,protocol_core_rf,rf_full,protocol_core_rf
+
+

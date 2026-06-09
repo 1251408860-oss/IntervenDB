@@ -1,0 +1,10 @@
+﻿input_predictions_csv: results/local_smoke/predictions_long.csv
+output_dir: results/risk_cube_random
+benchmark_repeats: 50
+
+witness:
+  strategy: random
+  max_per_cell: 24
+  random_state: 123
+
+

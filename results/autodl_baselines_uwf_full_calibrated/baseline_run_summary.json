@@ -1,0 +1,34 @@
+﻿{
+  "config": "configs/autodl_baseline_uwf_full_calibrated.yaml",
+  "output_dir": "<autodl-project-root>/results/autodl_baselines_uwf_full_calibrated",
+  "dataset_type": "uwf",
+  "rows": 95871,
+  "num_folds": 10,
+  "detectors_run": [
+    "cat_full",
+    "gb_full",
+    "iforest_env_sensitive",
+    "lgbm_full",
+    "lr_full",
+    "pyod_copod_env_sensitive",
+    "pyod_ecod_env_sensitive",
+    "rf_full",
+    "xgb_full"
+  ],
+  "detectors_skipped": [],
+  "calibration": {
+    "enabled": true,
+    "policies": [
+      "native_default",
+      "val_observed_f1",
+      "val_robust_minimax",
+      "oracle_env_upper_bound"
+    ],
+    "threshold_grid_size": 101,
+    "refit_on_full_train": true
+  },
+  "max_hidden_drop": 0.7157894736842105,
+  "max_rrs": 0.44612911331368965,
+  "elapsed_seconds": 5109.55907413736
+}
+

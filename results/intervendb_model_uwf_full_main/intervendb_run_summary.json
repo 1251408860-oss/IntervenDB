@@ -1,0 +1,28 @@
+﻿{
+  "config": "configs\\intervendb_model_uwf_full_main.yaml",
+  "output_dir": "<project-root>\\results\\intervendb_model_uwf_full_main",
+  "dataset_type": "uwf",
+  "rows": 95871,
+  "num_folds": 10,
+  "methods": [
+    "intervendb_adaptive_openworld_selector",
+    "intervendb_conformal_tail_guard",
+    "intervendb_counterfactual_ensemble",
+    "intervendb_coverage_lift_openworld_selector",
+    "intervendb_coverage_openworld_selector",
+    "intervendb_env_calibrated_ensemble",
+    "intervendb_gated_conformal_tail_guard",
+    "intervendb_minimax_selector",
+    "intervendb_observed_selector",
+    "intervendb_openworld_selector",
+    "intervendb_pareto_selector",
+    "intervendb_shift_guard_selector",
+    "intervendb_stability_selector",
+    "intervendb_tail_guard_ensemble"
+  ],
+  "max_hidden_drop": 0.6717948717948719,
+  "max_rrs": 0.5,
+  "best_mean_worst_intervention_f1": 0.9939763890437744,
+  "elapsed_seconds": 514.8369088
+}
+

@@ -1,0 +1,65 @@
+﻿random_state: 42
+test_size: 0.35
+validation_size: 0.25
+output_dir: results/autodl_baselines_gotham_full_core_calibrated
+save_predictions: false
+
+validation:
+  strategy: device_challenge
+  group_col: device_file
+  min_group_rows: 1000
+  max_groups: 1
+  max_rows: 12000
+  benign_ratio: 1.0
+
+calibration:
+  enabled: true
+  threshold_grid_size: 101
+  refit_on_full_train: true
+  policies:
+    - native_default
+    - val_observed_f1
+    - val_robust_minimax
+    - oracle_env_upper_bound
+
+dataset:
+  type: gotham
+  raw_dir: data/raw/gotham_2025/processed_full
+  max_rows_per_label: 1000000
+  chunksize: 100000
+
+splits:
+  - random
+  - time
+  - device
+
+detectors:
+  - lr_full
+  - rf_full
+  - xgb_full
+  - lgbm_full
+  - cat_full
+  - iforest_env_sensitive
+  - pyod_ecod_env_sensitive
+  - pyod_copod_env_sensitive
+
+interventions:
+  observed:
+    seed: 42
+  low_sampling:
+    sampling_rate: 0.25
+    seed: 43
+  congested_link:
+    duration_multiplier: 8.0
+    packet_jitter: 12.0
+    seed: 44
+  high_background:
+    background_byte_multiplier: 3.5
+    packet_jitter: 16.0
+    seed: 45
+  delayed_collector:
+    timestamp_shift: 21600.0
+    seed: 46
+
+
+

@@ -1,0 +1,30 @@
+﻿{
+  "rows": 95871,
+  "positives": 47965,
+  "negatives": 47906,
+  "attack_families": [
+    "Credential Access",
+    "Defense Evasion",
+    "Exfiltration",
+    "Initial Access",
+    "Persistence",
+    "Privilege Escalation",
+    "Reconnaissance",
+    "benign"
+  ],
+  "techniques": [
+    "Duplicate",
+    "T1048",
+    "T1078",
+    "T1110",
+    "T1190",
+    "T1595",
+    "benign"
+  ],
+  "protocols": [
+    "icmp",
+    "tcp",
+    "udp"
+  ]
+}
+

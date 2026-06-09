@@ -1,0 +1,5 @@
+detector,detector_family,feature_profile,observed_f1_mean,worst_intervention_f1_mean,hidden_drop_mean,hidden_drop_max,policy,base_detector
+cat_full__oracle_env_upper_bound,catboost,full,0.9615054981015728,0.9584047708786348,0.0031007272229382,0.0257399389844928,oracle_env_upper_bound,cat_full
+cat_full,catboost,full,0.9065954409190952,0.8952990689359727,0.0112963719831226,0.0892068009971344,native_default,cat_full
+cat_full__val_observed_f1,catboost,full,0.9572772794792156,0.8737492665671327,0.0835280129120827,0.6675191815856778,val_observed_f1,cat_full
+gb_full__val_robust_minimax,sklearn_boosting,full,0.8997766324195242,0.8710238288290606,0.0287528035904635,0.1016322928142463,val_robust_minimax,gb_full

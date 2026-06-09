@@ -1,0 +1,13 @@
+﻿split,fold,train_rows,test_rows,train_positive_rate,test_positive_rate
+random,all,62316,33555,0.5003048976185891,0.5003129190880644
+time,within_family_chronological,62317,33554,0.5003129162186883,0.5002980270608571
+source_ip,within_family_source_ip,57489,38382,0.47631720850945397,0.5362409462769007
+heldout_family,credential_access,28424,67447,0.15729665071770335,0.6448618915592984
+heldout_family,defense_evasion,95219,652,0.5003098121173295,0.5
+heldout_family,exfiltration,95798,73,0.5004488611453266,0.3150684931506849
+heldout_family,initial_access,94749,1122,0.5003113489324426,0.5
+heldout_family,persistence,95219,652,0.5003098121173295,0.5
+heldout_family,privilege_escalation,95219,652,0.5003098121173295,0.5
+heldout_family,reconnaissance,90053,5818,0.5003275848666896,0.5
+
+

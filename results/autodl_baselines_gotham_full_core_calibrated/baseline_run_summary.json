@@ -1,0 +1,33 @@
+﻿{
+  "config": "configs/autodl_baseline_gotham_full_core_calibrated.yaml",
+  "output_dir": "<autodl-project-root>/results/autodl_baselines_gotham_full_core_calibrated",
+  "dataset_type": "gotham",
+  "rows": 5512259,
+  "num_folds": 3,
+  "detectors_run": [
+    "cat_full",
+    "iforest_env_sensitive",
+    "lgbm_full",
+    "lr_full",
+    "pyod_copod_env_sensitive",
+    "pyod_ecod_env_sensitive",
+    "rf_full",
+    "xgb_full"
+  ],
+  "detectors_skipped": [],
+  "calibration": {
+    "enabled": true,
+    "policies": [
+      "native_default",
+      "val_observed_f1",
+      "val_robust_minimax",
+      "oracle_env_upper_bound"
+    ],
+    "threshold_grid_size": 101,
+    "refit_on_full_train": true
+  },
+  "max_hidden_drop": 0.8466233765677066,
+  "max_rrs": 0.6519957235430418,
+  "elapsed_seconds": 24901.509071446955
+}
+

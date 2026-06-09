@@ -1,0 +1,81 @@
+﻿random_state: 42
+test_size: 0.35
+validation_size: 0.25
+output_dir: results/intervendb_model_gotham_full_uncapped_autodl
+save_predictions: false
+
+validation:
+  strategy: device_challenge
+  group_col: device_file
+  min_group_rows: 1000
+  max_groups: 1
+  max_rows: 12000
+  benign_ratio: 1.0
+
+dataset:
+  type: gotham
+  raw_dir: data/raw/gotham_2025/processed_full
+  max_rows_per_label: 1000000
+  chunksize: 100000
+
+splits:
+  - random
+  - time
+  - device
+
+candidate_detectors:
+  - lr_full
+  - rf_full
+  - protocol_core_rf
+  - iforest_env_sensitive
+
+selection:
+  threshold_grid_size: 101
+  refit_on_full_train: true
+  tail_guard_candidate: iforest_env_sensitive
+  tail_guard_anomaly_threshold: 0.50
+  tail_guard_max_alert_inflation: 1.40
+  tail_guard_conformal_grid_min: 0.50
+  tail_guard_conformal_grid_max: 0.995
+  tail_guard_conformal_grid_size: 80
+  tail_guard_conformal_threshold: 0.50
+  tail_guard_primary_gate: 0.001
+  coverage_floor_fraction: 0.85
+  coverage_min_gap: 0.00
+  coverage_lift_min_absolute: 0.03
+  coverage_lift_gap_fraction: 0.30
+  coverage_recovery_fraction: 0.95
+  ensemble_exclude_candidates:
+    - iforest_env_sensitive
+  stability_cfs_penalty: 0.35
+  stability_alert_penalty: 0.08
+  shift_guard_observed_weight: 0.15
+  shift_guard_mean_weight: 0.10
+  shift_guard_alert_penalty: 0.03
+  pareto_observed_margin: 0.20
+  pareto_observed_weight: 0.25
+  pareto_mean_weight: 0.10
+  pareto_cfs_penalty: 0.08
+  pareto_alert_penalty: 0.03
+  ensemble_temperature: 10.0
+
+interventions:
+  observed:
+    seed: 42
+  low_sampling:
+    sampling_rate: 0.25
+    seed: 43
+  congested_link:
+    duration_multiplier: 8.0
+    packet_jitter: 12.0
+    seed: 44
+  high_background:
+    background_byte_multiplier: 3.5
+    packet_jitter: 16.0
+    seed: 45
+  delayed_collector:
+    timestamp_shift: 21600.0
+    seed: 46
+
+
+

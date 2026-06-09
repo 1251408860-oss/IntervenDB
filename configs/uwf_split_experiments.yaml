@@ -1,0 +1,33 @@
+﻿random_state: 42
+test_size: 0.35
+output_dir: results/uwf_split_experiments
+
+dataset:
+  raw_dir: data/raw/uwf_zeekdata24
+  max_rows_per_family: 3500
+
+splits:
+  - random
+  - time
+  - source_ip
+  - heldout_family
+
+interventions:
+  observed:
+    seed: 42
+  low_sampling:
+    sampling_rate: 0.20
+    seed: 43
+  congested_link:
+    duration_multiplier: 8.0
+    packet_jitter: 4.0
+    seed: 44
+  high_background:
+    background_byte_multiplier: 4.0
+    packet_jitter: 8.0
+    seed: 45
+  delayed_collector:
+    timestamp_shift: 21600.0
+    seed: 46
+
+

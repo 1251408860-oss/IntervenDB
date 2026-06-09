@@ -1,0 +1,13 @@
+﻿{
+  "input_predictions_csv": "<project-root>\\results\\local_smoke\\predictions_long.csv",
+  "output_dir": "<project-root>\\results\\risk_cube_random",
+  "duckdb_path": "<project-root>\\results\\risk_cube_random\\intervendb_local.duckdb",
+  "full_rows": 140525,
+  "witness_rows": 5110,
+  "compression_ratio": 27.5,
+  "witness_strategy": "random",
+  "max_abs_f1_error": 0.0590532330165906,
+  "mean_abs_f1_error": 0.014684920228859874,
+  "benchmark_repeats": 50
+}
+
